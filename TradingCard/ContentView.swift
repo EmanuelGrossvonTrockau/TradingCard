@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let cardToShow: Card
+    
+    
     var body: some View {
         ZStack{
             
-            LinearGradient(colors: [.white, .black, .white],
+            LinearGradient(colors: [cardToShow.color1, cardToShow.color2, cardToShow.color3],
                            startPoint: .leading,
                            endPoint: .trailing)
             .ignoresSafeArea()
@@ -27,7 +31,7 @@ struct ContentView: View {
                 .frame(height: 420)
             
             HStack{
-                LinearGradient(colors: [.white, .black, .white],
+                LinearGradient(colors: [cardToShow.color1, cardToShow.color2, cardToShow.color3],
                                startPoint: .leading,
                                endPoint: .trailing)
                               
@@ -41,7 +45,7 @@ struct ContentView: View {
                 .frame(width: 275, height: 270)
             
             
-            Image("Müller" )
+            Image(cardToShow.Playerimage)
                 .resizable()
             
                 .frame(width: 265, height: 265)
@@ -51,7 +55,7 @@ struct ContentView: View {
                     .frame(height: 300)
                 HStack{
                     
-                    Image("DFB")
+                    Image(cardToShow.Team)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 120)
@@ -67,7 +71,7 @@ struct ContentView: View {
                 HStack{
                     
                     Spacer()
-                    Image("German")
+                    Image(cardToShow.flag)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 120)
@@ -80,19 +84,19 @@ struct ContentView: View {
             VStack{
                 Spacer()
                     .frame(height: 550)
-                Text("Thomas Müller")
+                Text(cardToShow.Name)
                     .font(Font.system(size: 25, weight: .bold))
-                    .foregroundColor(.red)
+                    .foregroundColor(cardToShow.namecolor)
                 
                 HStack{
                     
-                    Text("ZOM")
-                        .foregroundColor(.black)
+                    Text(cardToShow.Positon)
+                        .foregroundColor(cardToShow.Posotioncolor)
                         .font(Font.system(size: 40, weight: .bold))
                     Spacer()
-                    Text("13")
+                    Text(cardToShow.Number)
                         .font(Font.system(size: 40, weight: .bold))
-                        .foregroundColor(.yellow)
+                        .foregroundColor(cardToShow.Numbercolor)
                     
                 }
             
@@ -106,6 +110,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(cardToShow: Messi)
     }
 }

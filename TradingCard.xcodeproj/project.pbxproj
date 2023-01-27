@@ -57,10 +57,10 @@
 			children = (
 				0F1F08E529835DDC000E6965 /* TradingCardApp.swift */,
 				0F1F08F729835E2B000E6965 /* ListView.swift */,
-				0F1F08F329835DEE000E6965 /* Group */,
-				0F1F08E729835DDC000E6965 /* ContentView.swift */,
 				0F1F08F629835E18000E6965 /* Struc */,
 				0F1F08F429835E13000E6965 /* Struc.swift */,
+				0F1F08F329835DEE000E6965 /* Group */,
+				0F1F08E729835DDC000E6965 /* ContentView.swift */,
 				0F1F08E929835DDE000E6965 /* Assets.xcassets */,
 				0F1F08EB29835DDE000E6965 /* Preview Content */,
 			);
