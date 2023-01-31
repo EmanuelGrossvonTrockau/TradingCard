@@ -33,3 +33,5 @@ let Neymar = Card(Name: "Neymar Jr", Positon: "ZOM", Number: "11", Playerimage: 
 let Ronaldinho = Card(Name: "Ronaldinho", Positon: "LW", Number: "10", Playerimage: "R", color1: Color.yellow, color2: Color.blue, color3: Color.green, flag: "brazil", Team: "b", Posotioncolor: Color.yellow, Numbercolor: Color.green, namecolor: Color.blue)
 
 let Messi = Card(Name: "Messi", Positon: "RW", Number: "10", Playerimage: "Messi", color1: Color.blue, color2: Color.white, color3: Color.blue, flag: "Argen", Team: "Arteam", Posotioncolor: Color.blue, Numbercolor: Color.blue, namecolor: Color.blue)
+
+let Ronaldo = Card(Name: "Cristano Ronaldo", Positon: "ST", Number: "7", Playerimage: "Ronaldo", color1: Color.green, color2: Color.red, color3: Color.red, flag: "portugal", Team: "pteam", Posotioncolor: Color.green, Numbercolor: Color.red, namecolor: Color.red)

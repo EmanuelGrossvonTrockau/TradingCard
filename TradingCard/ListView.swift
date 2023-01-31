@@ -35,6 +35,11 @@ struct ListView: View {
             }, label: {
                 Text("Lionel Messi")
             })
+            NavigationLink(destination: {
+                ContentView(cardToShow: Ronaldo)
+            }, label: {
+                Text("Cristano Ronaldo")
+            })
         }
         .navigationTitle("Trading Cards")
     }
